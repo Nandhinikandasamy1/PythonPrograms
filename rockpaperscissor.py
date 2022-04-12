@@ -26,12 +26,17 @@ scissors = '''
       (____)
 ---.__(___)
 '''
+#Creating list to club all the img 
 game_img = [rock, paper, scissors]
-
+#Getting input from user
 user_input = int(input("What do you choose? Type 0 for Rock, 1 for Paper or 2 for Scissors. "))
+#Printing user option
 print("You chose:\n"+game_img[user_input])
+#Generating random value and saving it in variable as computer input
 computer_input = random.randint(0, 2)
+#Printing Computers choice
 print("Computer chose:\n"+game_img[computer_input])
+#Displying result based on if conditions
 if user_input > 2 or user_input < 0:
     print("Invalid number")
 elif user_input == 0 and computer_input == 2:
